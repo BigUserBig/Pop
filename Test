@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<form action="/Registration.php" method="post">
+
+    <p>
+    <h1 align="center" style="color: lightskyblue">Registration</h1>
+    </p>
+
+    <p align="center">
+        <strong>Login</strong>
+        <input name="Login" type="text" maxlength="15" pattern="[A-Za-z-0-9]{3,15}" title="Не менее 3 и не более 15 латинских символов или цифр." value="<?php echo $data['Login'] ?>">
+
+    </p>
+
+    <p align="center">
+        <strong>Password</strong>
+        <input name="Password_1" type="password" maxlength="15" pattern="[A-Za-z-0-9]{5,15}"
+               title="Не менее 5 и не более 15 латинских символов или цифр.">
+    </p>
+
+    <p align="center">
+        <strong>Confirm Password</strong>
+        <input name="Password_2" type="password" maxlength="15" pattern="[A-Za-z-0-9]{5,15}"
+               title="Не менее 5 и не более 15 латинских символов или цифр.">
+    </p>
+
+    <p align="center">
+        <strong>Email</strong>
+        <input name="Email" type="email">
+    </p>
+
+    <p align="center">
+        <strong>Name</strong>
+        <input name="Name" type="text" maxlength="15" pattern="[A-Za-z-0-9]{3,15}"
+               title="Не менее 5 и не более 15 латинских символов или цифр.">
+    </p>
+
+    <p align="center">
+        <button name="Submit">Submit</button>
+        </br></br>
+        <button name="Home">Home</button>
+    </p>
+
+</form>
+
+
+</body>
+</html>
